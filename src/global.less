@@ -1,0 +1,118 @@
+@import '~antd/es/style/variable.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// Compatible with IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.TVBorder {
+  div.ant-table-container,
+  table,
+  th,
+  td {
+    // border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    border-color: #bfbfbf !important;
+    border-width: 1.5px !important;
+  }
+}
+.redTVCol {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  line-height: 1 !important;
+  border-right: none !important;
+}
+.orangeTVCol {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  line-height: 1 !important;
+  border-right: none !important;
+}
+.blueTVCol {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  line-height: 1 !important;
+}
+.minHeightTVCol {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+  border-bottom: none !important;
+}
+
+.minHeightLaptopCol {
+  padding: 4px !important;
+  line-height: 1 !important;
+}
+.minHeightLaptopChildCol {
+  padding: 5px !important;
+  line-height: 1 !important;
+}
+.mfgOrderStat {
+  padding: 0 !important;
+  padding-right: 15px !important;
+  line-height: 1 !important;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}

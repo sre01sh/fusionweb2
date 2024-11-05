@@ -1,0 +1,56 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.box {
+  max-width: 950px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: Montserrat, sans-serif;
+  line-height: 1.1;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .box {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .box {
+    font-size: 1.85rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .box {
+    font-size: 1.38rem;
+  }
+}
+
+.btn {
+  align-content: left;
+  padding-top: 5px;
+}
+
+.btn button {
+  padding: 12px;
+  color: white;
+  background: #3575f2;
+  border: #3575f2;
+  border-radius: 25px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.highlight-row {
+  background-color: yellow !important; /* !important 可能是必要的，取决于你的CSS优先级 */
+}
